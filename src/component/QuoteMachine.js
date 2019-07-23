@@ -71,20 +71,38 @@ const QuoteMachine =({selectedQuote,assignNewQuoteIndex,getRandomColor,classes,n
                     >
                     <FontAwesomeIcon style={{ color: newColor(), }} icon={faTwitter} size="md"></FontAwesomeIcon>
                 </IconButton>
-                    
-                <Button className={classes.margin} variant="contained" size="small" id="new-quote" style={{
+                   
+                    <Media query="(max-width:28.75em)">  
+                    <Button className={classes.margin} variant="contained" size="small" id="new-quote" style={{
                     color: "white",  
                     backgroundColor: newColor(),              
                 
-        // padding: "6px 18px 6px 18px",
+         //padding: "6px 18px 6px 18px",
      
-        
+
          marginBottom: "50",
          marginLeft:"25em",
     }} onClick={ (e) => {
     assignNewQuoteIndex();
     getRandomColor();
   }}>Next Quote</Button>
+                    </Media>
+ <Media query="(max-width:100em)">  
+                <Button className={classes.margin} variant="contained" size="small" id="new-quote" style={{
+                    color: "white",  
+                    backgroundColor: newColor(),              
+                
+         //padding: "6px 18px 6px 18px",
+     
+
+         marginBottom: "50",
+         marginLeft:"25em",
+    }} onClick={ (e) => {
+    assignNewQuoteIndex();
+    getRandomColor();
+  }}>Next Quote</Button>
+  </Media> 
+              
   </span>
 
               
