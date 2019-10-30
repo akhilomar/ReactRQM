@@ -22,6 +22,7 @@ class App extends Component{
       quotes:[],
       selectedQuoteIndex: null,
       bgColor : ["#0652DD","#fff200","#16a085","#27ae60","#2c3e50","#f39c12","#e74c3c","#9b59b6","#FB6964","#342224","#472E32","#BDBB99", "#77B1A9","#73A857","#1B1464"],
+      //you can search color using their color code here : https://www.colorhexa.com/
       selectedColor:'',
     }
     this.selectQuoteIndex=this.selectQuoteIndex.bind(this);
